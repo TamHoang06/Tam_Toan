@@ -1,0 +1,541 @@
+version: '3.1'
+intents:
+- addiction_recovery
+- age
+- aging_gracefully
+- aging_health
+- agree
+- allergies
+- appointment
+- ask_solution
+- asthma_define
+- asthma_prevention
+- asthma_symptoms
+- cancer_support
+- caregiver_support
+- caregiving_tips
+- child_health
+- child_nutrition
+- chronic_conditions
+- cognitive_health
+- common_cold_define
+- common_cold_prevention
+- common_cold_symptoms
+- dental_care
+- dental_health
+- depression_define
+- depression_prevention
+- depression_symptoms
+- diabetes_define
+- diabetes_prevention
+- diabetes_symptoms
+- diet_nutrition
+- digital_health
+- disagree
+- disease_prevention
+- elderly_care
+- elderly_nutrition
+- emergency
+- exercise
+- exercise_injuries
+- exercise_recommendation
+- fever_define
+- fever_prevention
+- fever_symptoms
+- first_aid
+- fitness_motivation
+- goodbye
+- greetings
+- gut_health
+- heart_health
+- holistic_health
+- home_remedies
+- immune_system
+- insurance
+- insurance_claim
+- lifestyle_changes
+- medication
+- menstrual_health
+- mental_health
+- mental_health_support
+- mind_body_connection
+- mindful_eating
+- mindfulness_meditation
+- more_information
+- name
+- nutrition_advice
+- nutrition_for_athletes
+- nutrition_labels
+- nutrition_myths
+- nutrition_supplements
+- organ_donation
+- physical_therapy
+- possibilities
+- pregnancy
+- rehabilitation
+- reproductive_health
+- self_care_tips
+- sexual_health
+- skin_care
+- sleep_disorders
+- sleep_health
+- stress_management
+- substance_abuse
+- teen_nutrition
+- travel_health
+- vaccination
+- vision_care
+- weight_management
+- women_health
+- youth_health
+responses:
+  utter_greetings:
+  - text: Can I help you?
+  - text: What can i do for you?
+  - text: Are you having health care problems?
+  utter_goodbye:
+  - text: Come to me if you have health care related issues. I will always be here and help you 😊
+  utter_age:
+  - text: I was just created this year (2024)
+  utter_agree:
+  - text: It is my honor to support you. Please let me know if you have any questions regarding health care issues 😊.
+  - text: If you have any health care questions or need assistance, feel free to ask. I'm here to help! 😊
+  utter_disagree:
+  - text: I'm sorry for not responding according to your expectations. Please give me more information so I can assist you better. 🥺
+  - text: "T'm so sorry. Please feel free to share more details, and I'll do my best to help!\U0001F97A "
+  utter_joke:
+  - text: I'm still here 🙌.
+  - text: Come on, I haven't gone anywhere yet.
+  - text: Yes, please.
+  utter_present:
+  - text: I am Med, a chatbot that can answer all your questions about medical and health care issues. I was built by students of Hue University.
+  utter_end_advice:
+  - text: Hope the above information can help you 😊.
+  - text: I trust that the information provided will be of assistance to you 😊.
+  - text: If you have any further questions or need additional clarification, please don't hesitate to ask 🙌.
+  utter_out_of_scope:
+  - text: I was create to answer your questions about health care in English. Sorry for not begin able to answer your questions. 🥺
+  utter_common_cold_define:
+  - text: The common cold is a mild infection of your upper respiratory tract, affecting your nose and throat. It's caused by viruses, most commonly rhinoviruses. Symptoms include a runny or stuffy nose, sore throat, cough, sneezing, and generally feeling unwell. Most people recover within 7 to 10 days, but symptoms may last longer in smokers. If you experience worsening symptoms, fever, or other concerning signs, consider seeking medical care.
+  utter_fever_define:
+  - text: A fever is a temporary rise in body temperature. It's usually caused by an infection and is part of the body's immune response. While the myth of a “normal” body temperature being 98.6°F persists, the reality is that a healthy temperature can range from 97°F to 99°F. If you feel sick or suspect exposure to illnesses like COVID-19, it's essential to monitor your temperature. Remember, a thermometer is the most reliable way to check for a fever
+  utter_diabetes_define:
+  - text: Diabetes is a chronic condition where your blood sugar (glucose) levels are too high. It occurs due to problems with insulin, a hormone that helps regulate blood sugar.
+  utter_depression_define:
+  - text: "Depression is a mood disorder that causes persistent feelings of sadness and loss of interest. Also known as major depressive disorder or clinical depression, it affects how you feel, think, and behave. Symptoms include: Feelings of sadness, hopelessness, or emptiness, Irritability or frustration.... Remember, depression isn't a sign of weakness, and seeking help is essential. Treatment options include medication, psychotherapy, or a combination of both. If you or someone you know is struggling, consider reaching out to a healthcare professional for support."
+  utter_asthma_define:
+  - text: Asthma is a chronic lung disease that affects people of all ages. It is characterized by inflammation and muscle tightening around the airways, making it harder to breathe. Common symptoms include coughing, wheezing, shortness of breath, and chest tightness.
+  utter_possibilities:
+  - text: |
+      Try asking the following questions and I will answer them:
+      - Common diseases
+      - Health care for children, elderly or pregnant women
+      - Nutritional regimes
+      - Stress, mental health
+      - Sleep problems
+  utter_common_cold_symptoms:
+  - text: It seems that you are suffering from Common cold.
+  utter_fever_symptoms:
+  - text: It seems that you are suffering from Fever.
+  utter_diabetes_symptoms:
+  - text: It seems that you are suffering from Diabetes.
+  utter_depression_symptoms:
+  - text: It seem that you are suffering from Depression.
+  utter_asthma_symptoms:
+  - text: It seem that you are suffering from Asthma.
+  utter_common_cold_prevention:
+  - text: |-
+      Medicines you can consume: Dextromethorphan, Decongestant, Diphenhydramine, Crocin Cold. 
+      Preventions that you must follow: Wash your hands, avoid touching your face, clean frequently used surfaces, use hand sanitizers. 
+      Suggested foods are: Garlic, vitamin C-containing fruits, leafy greens, broccoli, oatmeal, spices, chicken soup.
+  utter_fever_prevention:
+  - text: |-
+      Medicines you can consume: acetaminophen, ibuprofen, aspirin, crocin cold. 
+      Prevention that you must follow: wash your hands, cover your mouth when you cough and your nose when you sneeze, clean frequently used surfaces, avoid sharing cups, glasses, and eating utensils with other people. 
+      Suggested foods are: garlic,Vitamin C-containing fruits, leafy greens, broccoli, oatmeal, spices, chicken soup.
+  utter_diabetes_prevention:
+  - text: |-
+      Medicines you can consume: Insulin, Amylinomimetic drug, Dipeptidyl peptidase-4 (DPP-4) inhibitor. 
+      Prevention that you must follow: cut sugar and refined carbs from your diet, work Out Regularly, drink water as your primary beverage, lose weight if you're overweight or obese, quit smoking, follow a very-low-carb diet, watch portion sizes. 
+      Suggested foods are: leafy greens, avocados, eggs.
+  utter_depression_prevention:
+  - text: |-
+      Medicines you can consume: brexpiprazole, quetiapine, olanzapine. 
+      Prevention that you must follow: exercise regularly, cut back on social media time, drink water as your primary beverage, build strong relationships, minimize your daily choices, follow a very-low-carb diet. 
+      Suggested foods are: get enough Vitamin D, Include Omega-3 Fatty Acids, beans and legumes.
+  utter_asthma_prevention:
+  - text: |-
+      Medicines you can consume: epinephrine, anticholinergic, Proair HF. 
+      Prevention that you must follow: identify asthma triggers, stay away from allergens, avoid smoke of any type. 
+      Suggested foods are: carrots, juice,eggs, broccoli, cantaloupe, milk.
+  utter_exercise_recommendation:
+  - text: |-
+      For weight loss, combine cardio exercises like jogging and cycling with strength training. 
+      Yoga and pilates improve flexibility. 
+      Strength training exercises include squats, lunges, and push-ups. 
+      Cardio workouts like running and swimming boost heart health.
+  utter_nutrition_advice:
+  - text: |-
+      Healthy snacks include fruits, nuts, and yogurt. 
+      Try grilled vegetables, salads, and lean proteins for low-calorie meals. 
+      A balanced vegan diet includes beans, tofu, and plenty of vegetables. 
+      Gluten-free options include quinoa, rice, and gluten-free oats.
+  utter_sleep_health:
+  - text: |-
+      Improve sleep quality by keeping a consistent sleep schedule and creating a relaxing bedtime routine. 
+      Limit screen time before sleep. 
+      If you have insomnia, consult a healthcare provider. 
+      Adults generally need 7-9 hours of sleep per night for optimal health.
+  utter_holistic_health:
+  - text: |-
+      Meditation reduces stress, improves focus, and promotes emotional well-being. 
+      Mindfulness involves being present in the moment, reducing anxiety. 
+      Natural remedies like herbal teas and essential oils can alleviate minor ailments. 
+      Holistic practices include acupuncture, chiropractic care, and massage therapy.
+  utter_travel_health:
+  - text: |-
+      Check travel vaccinations needed for your destination. 
+      To prevent jet lag, adjust your sleep schedule before departure. 
+      Stay hydrated, wash hands frequently, and eat balanced meals while traveling. 
+      Consider travel insurance to cover unexpected medical expenses abroad.
+  utter_first_aid:
+  - text: |-
+      For minor burns/cuts, clean the wound, apply antiseptic, and cover with a bandage. 
+      CPR involves chest compressions and rescue breaths. 
+      Signs of a stroke include sudden numbness, confusion, and difficulty speaking. 
+      Heart attack signs include chest pain, shortness of breath, and nausea.
+  utter_aging_health:
+  - text: |-
+      Healthy aging involves regular exercise, balanced diet, and social engagement. 
+      Manage arthritis with gentle exercises, heat/cold therapy, and medications. 
+      Cognitive exercises like puzzles and reading maintain brain health. 
+      Prevent falls by removing hazards, using handrails, and regular eye check-ups.
+  utter_sexual_health:
+  - text: |-
+      Safe sex involves using condoms and getting tested regularly. 
+      STD prevention includes vaccinations and practicing monogamy. 
+      Regular check-ups detect issues early. 
+      Don't hesitate to seek medical advice for any sexual health concerns.
+  - text: |-
+      Regular sexual health screenings are important for early detection of infections and diseases. 
+      Birth control options include pills, condoms, and intrauterine devices (IUDs). 
+      STI prevention involves safe practices and regular testing. 
+      Don't hesitate to seek counseling for any sexual health concerns.
+  utter_home_remedies:
+  - text: |-
+      Gargling with warm salt water helps sore throat. 
+      Honey and ginger can alleviate allergies. 
+      DIY face masks with honey and oatmeal improve skin. 
+      Chamomile and lavender teas promote relaxation and sleep.
+  utter_stress_management:
+  - text: |-
+      Stress relief methods include deep breathing, yoga, and meditation. 
+      Mind-body techniques like tai chi promote relaxation. 
+      Healthy coping mechanisms involve talking to a friend, journaling, or hobbies. 
+      In the workplace, take breaks, delegate tasks, and communicate concerns.
+  utter_allergies:
+  - text: |-
+      Common allergens include pollen, dust mites, pet dander, certain foods, and insect stings. 
+      If you suspect allergies, consult an allergist for proper diagnosis and management.
+  utter_pregnancy:
+  - text: |-
+      Pregnancy symptoms vary, but common signs include missed periods, morning sickness, fatigue, and breast tenderness. 
+      Prenatal care is crucial for a healthy pregnancy. Consult an OB-GYN for personalized guidance.
+  utter_child_health:
+  - text: |-
+      Childhood vaccinations are essential to protect against serious diseases. 
+      Encourage a balanced diet rich in fruits, vegetables, and whole grains for your child's health. 
+      Regular pediatric check-ups are important for monitoring growth and development.
+  utter_elderly_care:
+  - text: |-
+      Elderly care services provide support for seniors in various ways, from home healthcare to assisted living facilities. 
+      Managing chronic conditions often requires regular medications and lifestyle modifications. 
+      Fall prevention includes removing hazards at home and regular exercise.
+  utter_mental_health_support:
+  - text: |-
+      Several platforms offer online therapy with licensed therapists. 
+      Mental health hotlines provide immediate support. 
+      Deep breathing, exercise, and talking to a trusted friend can help manage anxiety and depression. 
+      Managing stress includes time management and relaxation techniques.
+  utter_rehabilitation:
+  - text: |-
+      Post-surgery rehabilitation often involves tailored exercises to regain strength and mobility. 
+      Physical therapy aids in recovery by improving flexibility and reducing pain. 
+      When choosing a rehabilitation center, consider their expertise, facilities, and patient reviews.
+  utter_substance_abuse:
+  - text: |-
+      Treatment options for substance abuse include therapy, counseling, and support groups like Alcoholics Anonymous (AA) and Narcotics Anonymous (NA). 
+      Counseling is essential for addressing underlying issues. 
+      Signs of substance abuse include changes in behavior, neglecting responsibilities, and withdrawal symptoms.
+  utter_chronic_conditions:
+  - text: |-
+      Managing diabetes involves medication, monitoring blood sugar levels, and lifestyle changes. 
+      Coping with cancer treatments may include chemotherapy, radiation, and emotional support. 
+      Living with arthritis requires exercise, weight management, and pain relief techniques. 
+      Heart disease management involves medication, dietary changes, and regular exercise.
+  utter_dental_care:
+  - text: |-
+      Good dental hygiene includes brushing, flossing, and regular dental check-ups. 
+      Common dental problems include cavities, gum disease, and tooth sensitivity. 
+      Choose a dentist based on recommendations, expertise, and your comfort level. 
+      Regular dental check-ups prevent issues and maintain oral health.
+  utter_emergency:
+  - text: |-
+      I'm really sorry to hear that you're in distress, but i'm just a computer program and can't provide emergency assistance. 
+      Please call your local emergency number immediately.
+  utter_medication:
+  - text: I can provide general information about medications, but it's important to consult a doctor or pharmacist for specific medical advice regarding your medication.
+  utter_appointment:
+  - text: You can book a doctor's appointment online through various platforms like Practo , Zocdoc, or through the official website of your local healthcare provider.
+  utter_insurance:
+  - text: |-
+      Health insurance coverage can vary. 
+      It's best to contact your insurance provider directly for specific details about your policy, coverage, and benefits.
+  utter_mental_health:
+  - text: |-
+      I'm really sorry to hear that you're feeling this way. 
+      It's important to talk to someone who can help, such as a mental health professional or a trusted person in your life.
+  utter_diet_nutrition:
+  - text: |-
+      A balanced diet includes a variety of foods such as fruits, vegetables, whole grains, lean proteins, and healthy fats. 
+      For personalized nutrition advice, it's best to consult a registered dietitian.
+  utter_exercise:
+  - text: |-
+      Regular physical activity is important for overall health. The best exercises depend on your fitness level and health condition. 
+      It's advisable to consult a fitness expert or a healthcare provider for personalized exercise recommendations.
+  utter_vaccination:
+  - text: |-
+      Vaccination schedules can vary based on your location and age group. 
+      It's best to check with your local healthcare provider or government health department for the most up-to-date vaccination information.
+  utter_insurance_claim:
+  - text: |-
+      To file a health insurance claim, you'll typically need to contact your insurance provider and provide necessary documents such as medical bills and receipts. 
+      The exact process can vary, so it's best to check with your insurance company for specific instructions.
+  utter_self_care_tips:
+  - text: |-
+      Self-care can include reading, taking walks, or practicing hobbies. 
+      Relaxation techniques like deep breathing and meditation can reduce stress. 
+      Mindfulness exercises involve being present in the moment. 
+      Creating a calm home environment and setting boundaries can help manage stress.
+  utter_nutrition_labels:
+  - text: |-
+      Reading nutrition labels helps you make informed food choices. 
+      Focus on serving size, calories, and nutrients. Check ingredient lists for hidden sugars and unhealthy fats. 
+      Choose whole foods, fruits, vegetables, and lean proteins for a balanced diet.
+  utter_sleep_disorders:
+  - text: |-
+      Symptoms of sleep disorders include difficulty falling or staying asleep. 
+      Insomnia treatment may involve therapy or medications. 
+      Sleep apnea may require CPAP machines or surgery. 
+      Improve sleep quality by creating a bedtime routine, limiting screen time, and maintaining a comfortable sleep environment.
+  utter_immune_system:
+  - text: |-
+      A healthy lifestyle boosts the immune system. Eat a balanced diet with plenty of fruits, vegetables, and whole grains. 
+      Regular exercise enhances immunity. Aim for 7-9 hours of sleep to support a healthy immune system.
+  utter_exercise_injuries:
+  - text: |-
+      Warm-up before exercising and cool down afterward to prevent injuries. 
+      Rest, ice, compression, and elevation (RICE) can help treat muscle strains. 
+      Joint pain may require rest and pain relief. 
+      Consult a healthcare professional for proper diagnosis and rehabilitation after sports injuries.
+  utter_weight_management:
+  - text: |-
+      Healthy weight loss involves a balanced diet and regular exercise. 
+      Maintain a healthy weight by adopting a sustainable lifestyle. 
+      BMI measures body fat based on height and weight. 
+      Avoiding processed foods, sugary drinks, and staying active can prevent weight gain.
+  utter_digital_health:
+  - text: |-
+      Health apps can track fitness, nutrition, and mental health. 
+      Wearable devices monitor activity, heart rate, and sleep text. 
+      Virtual doctor visits offer convenient consultations. 
+      Online fitness programs provide guided workouts and nutrition plans.
+  utter_menstrual_health:
+  - text: |-
+      Menstrual cramps can be relieved with hot water bottles and relaxation techniques. 
+      Maintain good menstrual hygiene by changing pads or tampons regularly. 
+      Irregular menstrual cycles may be due to hormonal imbalances. 
+      PMS symptoms can be managed with a balanced diet and stress reduction.
+  utter_organ_donation:
+  - text: |-
+      Organ donation saves lives by providing organs to patients in need. 
+      Sign up as an organ donor through local organizations or online registries. 
+      Common myths include age limits and medical complications, which are often inaccurate. 
+      Organ transplant processes involve evaluations, matching, and surgery.
+  utter_caregiver_support:
+  - text: |-
+      Caregivers need emotional and practical support. 
+      Managing stress is crucial; respite care offers short-term relief. 
+      Legal and financial resources include power of attorney and assistance programs. 
+      Reach out to local caregiver support groups for guidance.
+  utter_reproductive_health:
+  - text: |-
+      Fertility awareness methods track menstrual cycles for natural family planning. 
+      Contraception options include pills, condoms, and intrauterine devices. 
+      Regular reproductive health screenings detect issues early. 
+      Infertility treatments may include medications, surgery, or assisted reproductive technologies.
+  utter_addiction_recovery:
+  - text: |-
+      Addiction recovery involves therapy, support groups, and lifestyle changes. 
+      12-step programs like AA provide structured support. 
+      Therapies like cognitive-behavioral therapy address underlying issues. 
+      Relapse prevention includes avoiding triggers and building a strong support network.
+  utter_caregiving_tips:
+  - text: |-
+      Patients with dementia need patience and understanding. 
+      Effective communication involves clear, simple language and active listening. 
+      Assistive devices like walkers improve mobility. 
+      Managing challenging behaviors requires a calm approach and redirection techniques.
+  utter_cancer_support:
+  - text: |-
+      Cancer support groups provide emotional and practical support. 
+      Coping with chemotherapy side effects may involve medications and lifestyle changes. 
+      Cancer prevention includes a healthy diet, regular exercise, and avoiding tobacco. 
+      Cancer caregivers need support; consider joining caregiver support groups.
+  utter_nutrition_for_athletes:
+  - text: |-
+      Athletes need a balanced diet with carbohydrates, proteins, and healthy fats. 
+      Pre-workout meals should include complex carbs and proteins. 
+      Post-workout recovery foods include protein-rich snacks and hydrating fruits. 
+      Hydration is crucial; drink water before, during, and after exercise.
+  utter_youth_health:
+  - text: |-
+      Teenage health issues may include acne, growth spurts, and emotional changes. 
+      Healthy habits include balanced nutrition and regular exercise. 
+      Teen mental health concerns require support from parents and mental health professionals. 
+      Substance abuse prevention involves education and open communication.
+  utter_disease_prevention:
+  - text: |-
+      Prevent diseases by practicing good hygiene, getting vaccinated, and staying active. 
+      Follow immunization schedules to protect children from serious diseases. 
+      Prevent the spread of infectious diseases by washing hands frequently and avoiding close contact with sick individuals. 
+      Travelers should research health precautions specific to their destination.
+  utter_vision_care:
+  - text: |-
+      Eye care includes regular eye exams and protecting eyes from UV rays. 
+      Common eye problems include myopia, hyperopia, and astigmatism. 
+      Consult an eye specialist to choose the right glasses or contact lenses. 
+      Eye safety precautions involve wearing protective goggles in hazardous environments.
+  utter_skin_care:
+  - text: |-
+      A good skin care routine includes cleansing, moisturizing, and using sunscreen. 
+      Acne can be managed with proper cleansing and non-comedogenic products. 
+      Protect skin from UV rays by wearing sunscreen, hats, and sunglasses. 
+      Common skin conditions include eczema, psoriasis, and dermatitis.
+  utter_elderly_nutrition:
+  - text: |-
+      Nutrition for seniors should include plenty of fruits, vegetables, whole grains, and lean proteins. 
+      Managing appetite may involve smaller, more frequent meals. 
+      Elderly-friendly meals can include soups, stews, and soft foods. 
+      Consult a healthcare provider before taking dietary supplements.
+  utter_teen_nutrition:
+  - text: |-
+      Teens need a balanced diet with adequate nutrients for growth and development. 
+      Encourage teens to eat a variety of fruits, vegetables, whole grains, and proteins. 
+      Address body image issues with positive reinforcement and self-acceptance. 
+      Promote positive eating habits through family meals and setting a good example.
+  utter_cognitive_health:
+  - text: |-
+      Cognitive exercises like puzzles and memory games promote brain health. 
+      Memory can be improved through regular mental exercises and a healthy lifestyle. 
+      Prevent cognitive decline by staying mentally and socially active. 
+      Brain-boosting foods include fatty fish, berries, and nuts.
+  utter_dental_health:
+  - text: |-
+      Caring for dental implants involves regular brushing and flossing. 
+      Oral hygiene for braces wearers includes special brushes and tools. 
+      Tooth sensitivity can be managed with desensitizing toothpaste and avoiding hot or cold foods. 
+      Choose toothpaste with fluoride to strengthen enamel.
+  utter_heart_health:
+  - text: |-
+      Maintain heart health through regular exercise, balanced diet, and stress management. 
+      Heart-healthy diets include low-fat, low-sodium foods, and plenty of fruits and vegetables. 
+      Exercises like aerobic activities and strength training promote a healthy heart. 
+      Manage blood pressure through medication, diet, and lifestyle changes.
+  utter_physical_therapy:
+  - text: |-
+      Physical therapy aids in recovery from injuries, surgeries, and chronic conditions. 
+      Exercises for common injuries include stretches, strength training, and balance exercises. 
+      Rehabilitation after surgery may involve mobility exercises and pain management. 
+      Choose a physical therapist based on expertise, referrals, and compatibility.
+  utter_nutrition_supplements:
+  - text: |-
+      Dietary supplements can fill nutritional gaps but should not replace a balanced diet. 
+      Choose supplements based on individual needs and consult a healthcare provider. 
+      Certain vitamins and minerals support specific health needs, such as calcium for bone health. 
+      Supplements may interact with medications; consult a healthcare provider for guidance.
+  utter_mindful_eating:
+  - text: |-
+      Mindful eating involves savoring each bite, eating without distractions, and paying attention to body cues. 
+      Mindful eating exercises include meditation and deep breathing before meals. 
+      Listen to your body's signals for hunger and fullness. 
+      Avoid emotional eating by finding non-food ways to cope with emotions.
+  utter_gut_health:
+  - text: |-
+      Maintain gut health through a balanced diet rich in fiber, fruits, vegetables, and whole grains. 
+      Foods for a healthy gut include yogurt, kefir, and fermented foods. 
+      Probiotics and prebiotics support gut flora. 
+      Digestive issues may require dietary changes, stress management, and medical evaluation.
+  utter_women_health:
+  - text: |-
+      Women's health screenings include mammograms, Pap smears, and bone density tests. 
+      Consult a healthcare provider for irregular menstrual cycles. 
+      Postmenopausal health involves bone health and heart health. 
+      Breast self-exams can detect changes and should be performed regularly.
+  utter_nutrition_myths:
+  - text: |-
+      Common nutrition myths include the need for detox diets and excessive protein consumption. 
+      Misconceptions about diet and exercise include spot reduction and extreme calorie restriction. 
+      Differentiating food myths from facts can lead to healthier choices. 
+      Healthy eating truths involve balance, variety, and moderation.
+  utter_lifestyle_changes:
+  - text: |-
+      Sustainable lifestyle changes involve gradual adjustments and realistic goals. 
+      Set specific, achievable health goals for motivation. 
+      Stay motivated for exercise by finding enjoyable activities and workout partners. 
+      Building healthy habits requires consistency, positive reinforcement, and support.
+  utter_child_nutrition:
+  - text: |-
+      Nutrition for picky eaters can include creative presentations of fruits and vegetables. 
+      Healthy school lunch ideas include whole grains, lean proteins, and colorful fruits and vegetables. 
+      Balanced snacks for kids can include yogurt, nuts, and cut-up fruits. 
+      Prevent childhood obesity through regular physical activity and limiting sugary foods.
+  utter_mind_body_connection:
+  - text: |-
+      The mind-body connection emphasizes the influence of mental and emotional states on physical health. 
+      Meditation and yoga reduce stress and promote relaxation. 
+      Emotional stress can impact physical health, leading to various conditions. 
+      Positive thinking and optimism have a positive impact on overall well-being.
+  utter_fitness_motivation:
+  - text: |-
+      Staying motivated for fitness involves setting goals, tracking progress, and celebrating achievements. 
+      Overcoming workout plateaus can be achieved by changing routines and intensities. 
+      Finding joy in physical activity by exploring different activities. 
+      Creating a supportive fitness environment with friends, family, or fitness communities.
+  utter_mindfulness_meditation:
+  - text: |-
+      Mindfulness meditation involves being fully present in the moment. 
+      Practice mindful breathing by focusing on each breath. 
+      Body scan meditation involves paying attention to different parts of the body. 
+      Mindful eating meditation focuses on savoring the taste, texture, and aroma of food.
+  utter_aging_gracefully:
+  - text: |-
+      Aging gracefully involves staying active, socializing, and engaging in hobbies. 
+      Maintain mental agility through puzzles, learning new skills, and social interactions. 
+      Embrace the aging process with self-compassion and gratitude. 
+      Finding purpose and joy in l,ter years can come from volunteering, hobbies, and spending time with loved ones.
+actions:
+- utter_end_advice
+- What is my friend's name?
+- utter_present
+- utter_greetings
+- utter_goodbye
+- utter_agree
+- utter_disagree
+- utter_joke
+- utter_common_cold_symptoms
+- utter_common_cold_define
+- utter_common_cold_prevention
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,636 @@
+version: "3.1"
+
+stories:
+
+- story: introduce chatbot
+  steps:
+  - intent: greetings
+  - action: utter_present
+  - action: utter_greetings
+
+- story: bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user agree/thanks
+  steps:
+  - intent: agree
+  - action: utter_agree
+
+- story: user not agree
+  steps:
+  - intent: disagree
+  - action: utter_disagree
+
+- story: ask name
+  steps:
+  - intent: name
+  - action: utter_present
+
+- story: ask age
+  steps: 
+  - intent: age
+  - action: utter_age
+
+- story: user say hello twice
+  steps: 
+  - intent: greetings
+  - action: utter_present
+  - action: utter_greetings
+  - intent: greetings
+  - action: utter_joke
+
+- story: story 1.1 common cold
+  steps:
+  - intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
+  - or:
+    - intent: common_cold_define
+    - intent: more_information
+  - action: utter_common_cold_define
+  - or:
+    - intent: common_cold_prevention
+    - intent: ask_solution
+  - action: utter_common_cold_prevention
+  - action: utter_end_advice
+
+- story: story 1.2 fever
+  steps:
+  - intent: fever_symptoms
+  - action: utter_fever_symptoms
+  - or:
+    - intent: fever_define
+    - intent: more_information
+  - action: utter_fever_define
+  - or:
+    - intent: fever_prevention
+    - intent: ask_solution
+  - action: utter_fever_prevention
+  - action: utter_end_advice
+
+- story: story 1.3 diabetes symptoms
+  steps:
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - or:
+    - intent: diabetes_define
+    - intent: more_information
+  - action: utter_diabetes_define
+  - or:
+    - intent: diabetes_prevention
+    - intent: ask_solution
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+
+- story: story 1.4 depression symptoms
+  steps:
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+  - or:
+    - intent: depression_define
+    - intent: more_information
+  - action: utter_depression_define
+  - or:
+    - intent: depression_prevention
+    - intent: ask_solution
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+
+- story: story 1.5 asthma symptoms
+  steps:
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - or:
+    - intent: asthma_define
+    - intent: more_information
+  - action: utter_asthma_define
+  - or:
+    - intent: asthma_prevention
+    - intent: ask_solution
+  - action: utter_asthma_prevention
+  - action: utter_end_advice
+
+- story: story 2.1 common cold
+  steps:
+  - intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
+  - or:
+    - intent: common_cold_prevention
+    - intent: ask_solution
+  - action: utter_common_cold_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: common_cold_define
+    - intent: more_information
+  - action: utter_common_cold_define
+  
+- story: story 2.2 fever
+  steps:
+  - intent: fever_symptoms
+  - action: utter_fever_symptoms
+  - or:
+    - intent: fever_prevention
+    - intent: ask_solution
+  - action: utter_fever_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: fever_define
+    - intent: more_information
+  - action: utter_fever_define
+  
+- story: story 2.3 diabetes symptoms
+  steps:
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+  - or:
+    - intent: diabetes_prevention
+    - intent: ask_solution
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: diabetes_define
+    - intent: more_information
+  - action: utter_diabetes_define
+
+- story: story 2.4 depression symptoms
+  steps:
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+  - or:
+    - intent: depression_prevention
+    - intent: ask_solution
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: depression_define
+    - intent: more_information
+  - action: utter_depression_define
+
+- story: story 2.5 asthma symptoms
+  steps:
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+  - or:
+    - intent: asthma_prevention
+    - intent: ask_solution
+  - action: utter_asthma_prevention
+  - action: utter_end_advice
+  - or:
+    - intent: asthma_define
+    - intent: more_information
+  - action: utter_asthma_define
+
+- story: common cold define
+  steps: 
+  - intent: common_cold_define
+  - action: utter_common_cold_define
+
+- story: fever define
+  steps: 
+  - intent: fever_define
+  - action: utter_fever_define
+
+- story: diabetes define
+  steps: 
+  - intent: diabetes_define
+  - action: utter_diabetes_define
+
+- story: depression define
+  steps: 
+  - intent: depression_define
+  - action: utter_depression_define
+
+- story: asthma define
+  steps: 
+  - intent: asthma_define
+  - action: utter_asthma_define
+
+- story: common cold symptoms
+  steps:
+  - intent: common_cold_symptoms
+  - action: utter_common_cold_symptoms
+
+- story: fever symptoms
+  steps:
+  - intent: fever_symptoms
+  - action: utter_fever_symptoms
+
+- story: diabetes symptoms
+  steps:
+  - intent: diabetes_symptoms
+  - action: utter_diabetes_symptoms
+
+- story: depression symptoms
+  steps:
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+
+- story: asthma symptoms
+  steps:
+  - intent: asthma_symptoms
+  - action: utter_asthma_symptoms
+
+- story: common cold prevention
+  steps:
+  - intent: common_cold_prevention
+  - action: utter_common_cold_prevention
+  - action: utter_end_advice
+
+- story: fever prevention
+  steps:
+  - intent: fever_prevention
+  - action: utter_fever_prevention
+  - action: utter_end_advice
+
+- story: diabetes prevention
+  steps:
+  - intent: diabetes_prevention
+  - action: utter_diabetes_prevention
+  - action: utter_end_advice
+
+- story: depression prevention
+  steps:
+  - intent: depression_prevention
+  - action: utter_depression_prevention
+  - action: utter_end_advice
+
+- story: asthma prevention
+  steps:
+    - intent: asthma_prevention
+    - action: utter_asthma_prevention
+    - action: utter_end_advice
+
+- story: exercise_recommendation
+  steps:
+  - intent: exercise_recommendation
+  - action: utter_exercise_recommendation
+  - action: utter_end_advice
+
+- story: nutrition_advice
+  steps:
+  - intent: nutrition_advice
+  - action: utter_nutrition_advice
+  - action: utter_end_advice
+
+- story: sleep_health
+  steps:
+  - intent: sleep_health
+  - action: utter_sleep_health
+  - action: utter_end_advice
+
+- story: holistic_health
+  steps:
+  - intent: holistic_health
+  - action: utter_holistic_health
+  - action: utter_end_advice
+
+- story: travel_health
+  steps:
+  - intent: travel_health
+  - action: utter_travel_health
+  - action: utter_end_advice
+
+- story: first_aid
+  steps:
+  - intent: first_aid
+  - action: utter_first_aid
+  - action: utter_end_advice
+
+- story: aging_health
+  steps:
+  - intent: aging_health
+  - action: utter_aging_health
+  - action: utter_end_advice
+
+- story: sexual_health
+  steps:
+  - intent: sexual_health
+  - action: utter_sexual_health
+  - action: utter_end_advice
+
+- story: home_remedies
+  steps:
+  - intent: home_remedies
+  - action: utter_home_remedies
+  - action: utter_end_advice
+
+- story: stress_management
+  steps:
+  - intent: stress_management
+  - action: utter_stress_management
+  - action: utter_end_advice
+
+- story: allergies
+  steps:
+  - intent: allergies
+  - action: utter_allergies
+  - action: utter_end_advice
+
+- story: pregnancy
+  steps:
+  - intent: pregnancy
+  - action: utter_pregnancy
+  - action: utter_end_advice
+
+- story: child_health
+  steps:
+  - intent: child_health
+  - action: utter_child_health
+  - action: utter_end_advice
+
+- story: elderly_care
+  steps:
+  - intent: elderly_care
+  - action: utter_elderly_care
+  - action: utter_end_advice
+
+- story: mental_health_support
+  steps:
+  - intent: mental_health_support
+  - action: utter_mental_health_support
+  - action: utter_end_advice
+
+- story: rehabilitation
+  steps:
+  - intent: rehabilitation
+  - action: utter_rehabilitation
+  - action: utter_end_advice
+
+- story: substance_abuse
+  steps:
+  - intent: substance_abuse
+  - action: utter_substance_abuse
+  - action: utter_end_advice
+
+- story: chronic_conditions
+  steps:
+  - intent: chronic_conditions
+  - action: utter_chronic_conditions
+  - action: utter_end_advice
+
+- story: dental_care
+  steps:
+  - intent: dental_care
+  - action: utter_dental_care
+  - action: utter_end_advice
+
+- story: emergency
+  steps:
+  - intent: emergency
+  - action: utter_emergency
+
+- story: medication
+  steps:
+  - intent: medication
+  - action: utter_medication
+
+- story: appointment
+  steps:
+  - intent: appointment
+  - action: utter_appointment
+  - action: utter_end_advice
+
+- story: insurance
+  steps:
+  - intent: insurance
+  - action: utter_insurance
+
+- story: mental_health
+  steps:
+  - intent: mental_health
+  - action: utter_mental_health
+
+- story: diet_nutrition
+  steps:
+  - intent: diet_nutrition
+  - action: utter_diet_nutrition
+  - action: utter_end_advice
+
+- story: exercise
+  steps:
+  - intent: exercise
+  - action: utter_exercise
+  - action: utter_end_advice
+
+- story: vaccination
+  steps:
+  - intent: vaccination
+  - action: utter_vaccination
+  - action: utter_end_advice
+
+- story: insurance_claim
+  steps:
+  - intent: insurance_claim
+  - action: utter_insurance_claim
+  - action: utter_end_advice
+
+- story: self_care_tips
+  steps:
+  - intent: self_care_tips
+  - action: utter_self_care_tips
+  - action: utter_end_advice
+
+- story: nutrition_labels
+  steps:
+  - intent: nutrition_labels
+  - action: utter_nutrition_labels
+  - action: utter_end_advice
+
+- story: sleep_disorders
+  steps:
+  - intent: sleep_disorders
+  - action: utter_sleep_disorders
+  - action: utter_end_advice
+
+- story: immune_system
+  steps:
+  - intent: immune_system
+  - action: utter_immune_system
+  - action: utter_end_advice
+
+- story: exercise_injuries
+  steps:
+  - intent: exercise_injuries
+  - action: utter_exercise_injuries
+  - action: utter_end_advice
+
+- story: weight_management
+  steps:
+  - intent: weight_management
+  - action: utter_weight_management
+  - action: utter_end_advice
+
+- story: digital_health
+  steps:
+  - intent: digital_health
+  - action: utter_digital_health
+  - action: utter_end_advice
+
+- story: menstrual_health
+  steps:
+  - intent: menstrual_health
+  - action: utter_menstrual_health
+  - action: utter_end_advice
+
+- story: organ_donation
+  steps:
+  - intent: organ_donation
+  - action: utter_organ_donation
+  - action: utter_end_advice
+
+- story: caregiver_support
+  steps:
+  - intent: caregiver_support
+  - action: utter_caregiver_support
+  - action: utter_end_advice
+
+- story: reproductive_health
+  steps:
+  - intent: reproductive_health
+  - action: utter_reproductive_health
+  - action: utter_end_advice
+
+- story: addiction_recovery
+  steps:
+  - intent: addiction_recovery
+  - action: utter_addiction_recovery
+  - action: utter_end_advice
+
+- story: caregiving_tips
+  steps:
+  - intent: caregiving_tips
+  - action: utter_caregiving_tips
+  - action: utter_end_advice
+
+- story: cancer_support
+  steps:
+  - intent: cancer_support
+  - action: utter_cancer_support
+  - action: utter_end_advice
+
+- story: nutrition_for_athletes
+  steps:
+  - intent: nutrition_for_athletes
+  - action: utter_nutrition_for_athletes
+  - action: utter_end_advice
+
+- story: youth_health
+  steps:
+  - intent: youth_health
+  - action: utter_youth_health
+  - action: utter_end_advice
+
+- story: vision_care
+  steps:
+  - intent: vision_care
+  - action: utter_vision_care
+  - action: utter_end_advice
+
+- story: skin_care
+  steps:
+  - intent: skin_care
+  - action: utter_skin_care
+  - action: utter_end_advice
+
+- story: elderly_nutrition
+  steps:
+  - intent: elderly_nutrition
+  - action: utter_elderly_nutrition
+  - action: utter_end_advice
+
+- story: teen_nutrition
+  steps:
+  - intent: teen_nutrition
+  - action: utter_teen_nutrition
+  - action: utter_end_advice
+
+- story: cognitive_health
+  steps:
+  - intent: cognitive_health
+  - action: utter_cognitive_health
+  - action: utter_end_advice
+
+- story: dental_health
+  steps:
+  - intent: dental_health
+  - action: utter_dental_health
+  - action: utter_end_advice
+
+- story: heart_health
+  steps:
+  - intent: heart_health
+  - action: utter_heart_health
+  - action: utter_end_advice
+
+- story: physical_therapy
+  steps:
+  - intent: physical_therapy
+  - action: utter_physical_therapy
+  - action: utter_end_advice
+
+- story: nutrition_supplements
+  steps:
+  - intent: nutrition_supplements
+  - action: utter_nutrition_supplements
+  - action: utter_end_advice
+
+- story: mindful_eating
+  steps:
+  - intent: mindful_eating
+  - action: utter_mindful_eating
+  - action: utter_end_advice
+
+- story: gut_health
+  steps:
+  - intent: gut_health
+  - action: utter_gut_health
+  - action: utter_end_advice
+
+- story: women_health
+  steps:
+  - intent: women_health
+  - action: utter_women_health
+  - action: utter_end_advice
+
+- story: nutrition_myths
+  steps:
+  - intent: nutrition_myths
+  - action: utter_nutrition_myths
+  - action: utter_end_advice
+
+- story: lifestyle_changes
+  steps:
+  - intent: lifestyle_changes
+  - action: utter_lifestyle_changes
+  - action: utter_end_advice
+
+- story: child_nutrition
+  steps:
+  - intent: child_nutrition
+  - action: utter_child_nutrition
+  - action: utter_end_advice
+
+- story: mind_body_connection
+  steps:
+  - intent: mind_body_connection
+  - action: utter_mind_body_connection
+  - action: utter_end_advice
+
+- story: fitness_motivation
+  steps:
+  - intent: fitness_motivation
+  - action: utter_fitness_motivation
+  - action: utter_end_advice
+
+- story: mindfulness_meditation
+  steps:
+  - intent: mindfulness_meditation
+  - action: utter_mindfulness_meditation
+  - action: utter_end_advice
+
+- story: aging_gracefully
+  steps:
+  - intent: aging_gracefully
+  - action: utter_aging_gracefully
+  - action: utter_end_advice

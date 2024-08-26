@@ -1,0 +1,744 @@
+version: "3.1"
+nlu:
+- intent: greetings
+  examples: |
+    - chào
+    - xin chào
+    - hi
+    - chào bạn
+    - chào buổi sáng
+    - chào buổi tối
+    - chào bạn đấy
+    - đi thôi
+    - chào bạn
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+    - chào hỏi
+    - có chuyện gì vậy?
+    - mọi việc thế nào rồi?
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - goodbye
+    - hẹn gặp lại
+    - chúc ngủ ngon
+    - bye
+    - gặp lại
+    - tạm biệt
+    - chúc bạn một ngày tốt lành
+    - hẹn gặp lại
+    - tạm biệt
+    - hẹn gặp lại
+
+- intent: age
+  examples: |
+    - bao nhiêu tuổi
+    - bạn bao nhiêu tuổi?
+    - bạn bao nhiêu tuổi
+    - tuổi của bạn là gì?
+    - tuổi?
+
+- intent: name
+  examples: |
+    - tên bạn là gì
+    - tôi nên gọi bạn là gì
+    - tên bạn là gì?
+    - bạn là ai?
+    - bạn có thể cho tôi biết tên bạn không?
+
+- intent: agree
+  examples: |
+    - cảm ơn
+    - cảm ơn bạn
+    - thông tin trên rất hữu ích
+    - bạn đã giúp tôi
+
+- intent: disagree
+  examples: |
+    - đó không phải là ý tôi
+    - bạn đã trả lời sai
+    - sai
+    - điều đó không đúng
+    - thông tin trên không giúp tôi
+
+- intent: more_information
+  examples: |
+    - đây là cái gì?
+    - bệnh gì vậy?
+    - Cho tôi thêm thông tin về điều này
+
+- intent: ask_solution
+  examples: |
+    - vui lòng giúp tôi giải quyết
+    - tôi cần làm gì?
+    - vui lòng cho tôi thêm thông tin để phòng ngừa
+    - tôi cần làm gì để cải thiện?
+    - tôi cần làm gì để cảm thấy tốt hơn?
+
+- intent: possibilities
+  examples: |
+    - bạn có thể làm gì?
+    - bạn có những khả năng gì?
+    - tôi có thể hỏi bạn điều gì?
+
+- intent: common_cold_define
+  examples: |
+    - Cảm lạnh là gì?
+    - cảm lạnh
+    - triệu chứng của cảm lạnh
+    - cảm lạnh có thể kéo dài bao nhiêu ngày?
+
+- intent: fever_define
+  examples: |
+    - Sốt là gì?
+    - sốt
+    - triệu chứng của sốt
+    - sốt có thể kéo dài bao nhiêu ngày?
+
+- intent: diabetes_define
+  examples: |
+    - Tiểu đường là gì?
+    - tiểu đường
+    - triệu chứng của tiểu đường
+    - tiểu đường có thể kéo dài bao nhiêu ngày?
+
+- intent: depression_define
+  examples: |
+    - Trầm cảm là gì?
+    - trầm cảm
+    - triệu chứng của trầm cảm
+    - trầm cảm có thể kéo dài bao nhiêu ngày?
+
+- intent: asthma_define
+  examples: |
+    - Hen suyễn là gì?
+    - hen suyễn
+    - triệu chứng của hen suyễn
+    - hen suyễn có thể kéo dài bao nhiêu ngày?
+
+- intent: common_cold_symptoms
+  examples: |
+    - Sổ mũi hoặc nghẹt mũi
+    - Đau họng
+    - Ho
+    - Tắc nghẽn
+    - Đau cơ nhẹ hoặc đau đầu nhẹ
+    - Hắt hơi
+    - Sốt nhẹ
+    - Cảm thấy không khỏe
+
+- intent: fever_symptoms
+  examples: |
+    - Đổ mồ hôi
+    - Rét run và ớn lạnh
+    - Đau đầu
+    - Đau cơ
+    - Mất cảm giác thèm ăn
+    - Cáu kỉnh
+    - Mất nước
+    - Yếu đuối chung
+
+- intent: diabetes_symptoms
+  examples: |
+    - Cảm giác đói nhiều
+    - Cảm giác khát nước nhiều
+    - Giảm cân
+    - Đi tiểu thường xuyên
+    - Nhìn mờ
+    - Mệt mỏi cực kỳ
+
+- intent: depression_symptoms
+  examples: |
+    - Cảm giác tuyệt vọng
+    - Mất hứng thú
+    - Mệt mỏi gia tăng
+    - Vấn đề về giấc ngủ
+    - Lo âu
+    - Thay đổi cân nặng
+    - Cảm giác nghĩ đến cái chết
+
+- intent: asthma_symptoms
+  examples: |
+    - Ho
+    - Cảm giác chặt chẽ ở ngực
+    - Khó thở
+    - Khó nói
+    - Hoảng loạn
+    - Mệt mỏi
+
+- intent: common_cold_prevention
+  examples: |
+    - Tôi có thể mua thuốc gì để giúp tôi với cảm lạnh?
+    - cho tôi một số phương pháp phòng ngừa cảm lạnh
+    - Tôi nên ăn hoặc uống gì nếu tôi bị cảm lạnh?
+    - Làm thế nào để tôi tránh bị cảm lạnh hoặc cúm?
+
+- intent: fever_prevention
+  examples: |
+    - Tôi có thể mua thuốc gì để giúp tôi với sốt?
+    - cho tôi một số phương pháp phòng ngừa sốt
+    - Tôi nên ăn hoặc uống gì nếu tôi bị sốt?
+    - Làm thế nào để tôi tránh bị sốt?
+
+- intent: diabetes_prevention
+  examples: |
+    - Tôi có thể mua thuốc gì để giúp tôi với tiểu đường?
+    - cho tôi một số phương pháp phòng ngừa tiểu đường
+    - Tôi nên ăn hoặc uống gì nếu tôi bị tiểu đường?
+    - Làm thế nào để tôi tránh bị tiểu đường?
+
+- intent: depression_prevention
+  examples: |
+    - Tôi có thể mua thuốc gì để giúp tôi với trầm cảm?
+    - cho tôi một số phương pháp phòng ngừa trầm cảm
+    - Tôi nên ăn hoặc uống gì nếu tôi bị trầm cảm?
+    - Làm thế nào để tôi tránh bị trầm cảm?
+
+- intent: asthma_prevention
+  examples: |
+    - Tôi có thể mua thuốc gì để giúp tôi với hen suyễn?
+    - cho tôi một số phương pháp phòng ngừa hen suyễn
+    - Tôi nên ăn hoặc uống gì nếu tôi bị hen suyễn?
+    - Làm thế nào để tôi tránh bị hen suyễn?
+
+- intent: exercise_recommendation
+  examples: |
+    - Các bài tập tốt nhất để giảm cân
+    - Bài tập để cải thiện tính linh hoạt
+    - Các bài tập sức mạnh
+    - Bài tập cardio
+
+- intent: nutrition_advice
+  examples: |
+    - Ý tưởng cho các bữa ăn nhẹ lành mạnh
+    - Công thức món ăn ít calo
+    - Mẹo ăn chay
+    - Ăn uống không chứa gluten
+
+- intent: sleep_health
+  examples: |
+    - Làm thế nào để cải thiện chất lượng giấc ngủ
+    - Xử lý chứng mất ngủ
+    - Thời gian ngủ lý tưởng
+    - Tạo thói quen đi ngủ
+
+- intent: holistic_health
+  examples: |
+    - Lợi ích của thiền
+    - Thực hành chánh niệm
+    - Các biện pháp tự nhiên cho các bệnh thường gặp
+    - Thực hành sức khỏe toàn diện
+
+- intent: travel_health
+  examples: |
+    - Tiêm chủng khi đi du lịch
+    - Cách khắc phục jet lag
+    - Giữ sức khỏe khi đi du lịch
+    - Lời khuyên về bảo hiểm du lịch
+
+- intent: first_aid
+  examples: |
+    - Kỹ thuật sơ cứu cơ bản
+    - Xử lý vết bỏng/cắt nhẹ
+    - Hướng dẫn CPR
+    - Nhận diện dấu hiệu của đột quỵ hoặc cơn đau tim
+
+- intent: aging_health
+  examples: |
+    - Mẹo cho tuổi tác khỏe mạnh
+    - Quản lý viêm khớp khi tuổi già
+    - Các bài tập nhận thức cho người cao tuổi
+    - Ngăn ngừa ngã ở người cao tuổi
+
+- intent: sexual_health
+  examples: |
+    - Các thực hành an toàn khi quan hệ tình dục
+    - Phòng ngừa bệnh lây qua đường tình dục (STD)
+    - Tầm quan trọng của các cuộc kiểm tra định kỳ
+    - Xử lý các vấn đề sức khỏe tình dục
+    - Xét nghiệm sức khỏe tình dục
+    - Các phương pháp tránh thai
+    - Phòng ngừa bệnh lây qua đường tình dục (STI)
+    - Tư vấn về sức khỏe tình dục
+
+- intent: home_remedies
+  examples: |
+    - Các biện pháp tự nhiên cho đau họng
+    - Biện pháp tự nhiên cho dị ứng
+    - Mẹo tự nhiên để giảm đau
+    - Thuốc dân gian cho cảm lạnh
+
+- intent: mental_health
+  examples: |
+    - Làm thế nào để cải thiện sức khỏe tâm thần
+    - Hỗ trợ cho các rối loạn tâm lý
+    - Thực hành chánh niệm cho sức khỏe tâm thần
+    - Tư vấn về sức khỏe tâm thần
+
+- intent: dentist_care
+  examples: |
+    - Cách chăm sóc răng miệng hàng ngày
+    - Tầm quan trọng của việc khám răng định kỳ
+    - Xử lý các vấn đề về nướu
+    - Phòng ngừa sâu răng
+
+- intent: alternative_medicine
+  examples: |
+    - Lợi ích của châm cứu
+    - Cây thuốc thảo dược cho sức khỏe
+    - Thực hành y học cổ truyền
+    - Xem xét thuốc tự nhiên
+
+- intent: vaccination
+  examples: |
+    - Lịch tiêm chủng cho trẻ em
+    - Tiêm chủng người lớn
+    - Lợi ích của các loại vaccine
+    - Các loại vaccine cần thiết
+
+- intent: nutrition_myths
+  examples: |
+    - Sự thật về chế độ ăn kiêng
+    - Đừng tin vào các thông tin sai lệch về dinh dưỡng
+    - Xóa bỏ những hiểu lầm về thực phẩm
+    - Các huyền thoại dinh dưỡng phổ biến
+
+- intent: healthy_diet
+  examples: |
+    - Chế độ ăn lành mạnh cho người trưởng thành
+    - Lời khuyên ăn uống cho những người có điều kiện sức khỏe đặc biệt
+    - Kế hoạch bữa ăn cho chế độ ăn kiêng cân bằng
+    - Các nguồn thực phẩm bổ dưỡng
+
+- intent: fitness_goals
+  examples: |
+    - Đặt mục tiêu thể dục thực tế
+    - Kế hoạch tập luyện để đạt mục tiêu giảm cân
+    - Các chỉ số sức khỏe cần theo dõi
+    - Các mẹo để duy trì động lực tập luyện
+
+- intent: chronic_conditions
+  examples: |
+    - Quản lý bệnh mãn tính
+    - Lời khuyên cho bệnh nhân tiểu đường
+    - Chăm sóc cho bệnh viêm khớp
+    - Theo dõi tình trạng bệnh mãn tính
+
+- intent: health_technology
+  examples: |
+    - Ứng dụng sức khỏe tốt nhất
+    - Thiết bị theo dõi sức khỏe
+    - Công nghệ y tế mới nhất
+    - Các giải pháp số cho sức khỏe
+
+- intent: pediatric_care
+  examples: |
+    - Chăm sóc sức khỏe cho trẻ em
+    - Tiêm chủng cho trẻ em
+    - Chế độ ăn uống cho trẻ em
+    - Theo dõi phát triển của trẻ
+
+- intent: geriatric_care
+  examples: |
+    - Chăm sóc người cao tuổi
+    - Quản lý bệnh lý liên quan đến tuổi tác
+    - Các dịch vụ cho người già
+    - Hỗ trợ cho người cao tuổi sống độc lập
+
+- intent: emergency_services
+  examples: |
+    - Số điện thoại khẩn cấp
+    - Cách gọi cứu thương
+    - Các dịch vụ khẩn cấp gần bạn
+    - Hướng dẫn gọi cấp cứu
+
+- intent: health_insurance
+  examples: |
+    - Lợi ích của bảo hiểm sức khỏe
+    - Loại bảo hiểm sức khỏe nào phù hợp cho bạn?
+    - So sánh các gói bảo hiểm sức khỏe
+    - Quyền lợi bảo hiểm sức khỏe
+
+- intent: medical_records
+  examples: |
+    - Cách truy cập hồ sơ y tế của bạn
+    - Lưu trữ và quản lý hồ sơ y tế
+    - Cập nhật thông tin hồ sơ y tế
+    - Quyền truy cập vào hồ sơ y tế
+
+- intent: health_education
+  examples: |
+    - Nguồn tài nguyên về giáo dục sức khỏe
+    - Các khóa học về sức khỏe
+    - Thông tin về các chương trình sức khỏe cộng đồng
+    - Đào tạo và hội thảo sức khỏe
+
+- intent: mental_health_support
+  examples: |
+    - Dịch vụ hỗ trợ sức khỏe tâm thần
+    - Cách tìm trợ giúp sức khỏe tâm thần
+    - Tư vấn sức khỏe tâm thần
+    - Các nguồn hỗ trợ cho sức khỏe tâm thần
+
+- intent: caring_for_aging_parents
+  examples: |
+    - Chăm sóc cha mẹ già
+    - Làm thế nào để hỗ trợ cha mẹ già
+    - Mẹo chăm sóc cho người cao tuổi
+    - Cần lưu ý gì khi chăm sóc cha mẹ già?
+
+- intent: mental_health_support
+  examples: |
+    - Các tùy chọn trị liệu trực tuyến
+    - Đường dây nóng sức khỏe tâm thần
+    - Kỹ thuật tự giúp cho lo âu hoặc trầm cảm
+    - Đối phó với căng thẳng
+
+- intent: rehabilitation
+  examples: |
+    - Phục hồi sau phẫu thuật
+    - Các bài tập phục hồi
+    - Lợi ích của vật lý trị liệu
+    - Chọn trung tâm phục hồi chức năng
+
+- intent: substance_abuse
+  examples: |
+    - Các tùy chọn điều trị nghiện
+    - Nhóm hỗ trợ cho nghiện
+    - Tư vấn cho lạm dụng chất
+    - Dấu hiệu của lạm dụng chất
+
+- intent: chronic_conditions
+  examples: |
+    - Quản lý bệnh tiểu đường
+    - Đối phó với điều trị ung thư
+    - Sống chung với viêm khớp
+    - Quản lý bệnh tim
+
+- intent: dental_care
+  examples: |
+    - Mẹo chăm sóc răng miệng
+    - Các vấn đề răng miệng thường gặp
+    - Chọn nha sĩ
+    - Tầm quan trọng của việc kiểm tra răng miệng định kỳ
+
+- intent: emergency
+  examples: |
+    - Tôi cần sự giúp đỡ khẩn cấp
+    - Hỗ trợ khẩn cấp
+    - Gọi xe cấp cứu
+    - Tôi đang gặp tình huống y tế khẩn cấp
+
+- intent: medication
+  examples: |
+    - Thuốc dùng để làm gì?
+    - Liều lượng của thuốc
+    - Tác dụng phụ của thuốc
+    - Tôi có thể dùng thuốc này cùng với thuốc khác không?
+
+- intent: appointment
+  examples: |
+    - Làm thế nào để đặt lịch hẹn?
+    - Lên lịch khám bác sĩ
+    - Tình trạng khả dụng của bác sĩ
+    - Đặt lịch tư vấn
+
+- intent: insurance
+  examples: |
+    - Bảo hiểm sức khỏe hoạt động như thế nào?
+    - Bảo hiểm của tôi bao gồm những gì?
+    - Tìm kế hoạch bảo hiểm sức khỏe
+    - Chi tiết về chính sách bảo hiểm
+
+- intent: mental_health
+  examples: |
+    - Tôi cảm thấy lo âu
+    - Tôi bị căng thẳng
+    - Đối phó với trầm cảm
+    - Cần có người để trò chuyện
+
+- intent: diet_nutrition
+  examples: |
+    - Chế độ ăn cân bằng là gì?
+    - Mẹo ăn uống lành mạnh
+    - Lời khuyên về dinh dưỡng
+    - Chế độ ăn cho tình trạng cụ thể
+
+- intent: exercise
+  examples: |
+    - Các bài tập tốt nhất cho tình trạng cụ thể
+    - Tôi nên tập thể dục bao nhiêu lần?
+    - Các thói quen tập thể dục
+    - Mẹo thể dục
+
+- intent: vaccination
+  examples: |
+    - Lịch tiêm chủng
+    - Tôi có thể tiêm chủng ở đâu?
+    - Thông tin về vaccine
+    - Vaccines cho người lớn/trẻ em
+
+- intent: insurance_claim
+  examples: |
+    - Làm thế nào để nộp yêu cầu bảo hiểm sức khỏe?
+    - Quy trình yêu cầu bảo hiểm
+    - Các tài liệu cần thiết cho yêu cầu bảo hiểm
+    - Tình trạng yêu cầu
+
+- intent: self_care_tips
+  examples: |
+    - Ý tưởng tự chăm sóc
+    - Kỹ thuật thư giãn
+    - Bài tập chánh niệm
+    - Quản lý căng thẳng tại nhà
+
+- intent: nutrition_labels
+  examples: |
+    - Làm thế nào để đọc nhãn dinh dưỡng
+    - Hiểu các nhãn thực phẩm
+    - Giải thích danh sách thành phần
+    - Lựa chọn thực phẩm lành mạnh
+
+- intent: sleep_disorders
+  examples: |
+    - Triệu chứng của rối loạn giấc ngủ
+    - Điều trị mất ngủ
+    - Đối phó với ngưng thở khi ngủ
+    - Cải thiện chất lượng giấc ngủ
+
+- intent: immune_system
+  examples: |
+    - Tăng cường hệ miễn dịch
+    - Thực phẩm giúp tăng cường miễn dịch
+    - Tập thể dục đều đặn và miễn dịch
+    - Ngủ đủ giấc để có hệ miễn dịch khỏe mạnh
+
+- intent: exercise_injuries
+  examples: |
+    - Ngăn ngừa chấn thương liên quan đến tập thể dục
+    - Điều trị căng cơ
+    - Đối phó với đau khớp
+    - Phục hồi sau chấn thương thể thao
+
+- intent: weight_management
+  examples: |
+    - Chiến lược giảm cân lành mạnh
+    - Duy trì trọng lượng khỏe mạnh
+    - Hiểu chỉ số khối cơ thể (BMI)
+    - Nguyên nhân và phòng ngừa tăng cân
+
+- intent: digital_health
+  examples: |
+    - Sử dụng các ứng dụng sức khỏe
+    - Lợi ích của thiết bị đeo
+    - Thăm khám bác sĩ trực tuyến
+    - Chương trình thể dục trực tuyến
+
+- intent: menstrual_health
+  examples: |
+    - Quản lý cơn đau kinh nguyệt
+    - Thực hành vệ sinh kinh nguyệt lành mạnh
+    - Chu kỳ kinh nguyệt không đều
+    - Triệu chứng và biện pháp khắc phục PMS
+
+- intent: organ_donation
+  examples: |
+    - Tầm quan trọng của hiến tạng
+    - Làm thế nào để trở thành người hiến tạng
+    - Những hiểu lầm phổ biến về hiến tạng
+    - Quy trình cấy ghép tạng
+
+- intent: caregiver_support
+  examples: |
+    - Hỗ trợ cho người chăm sóc
+    - Quản lý căng thẳng của người chăm sóc
+    - Các tùy chọn chăm sóc thay thế
+    - Tài nguyên pháp lý và tài chính cho người chăm sóc
+
+- intent: reproductive_health
+  examples: |
+    - Các phương pháp nhận thức về khả năng sinh sản
+    - Các tùy chọn tránh thai
+    - Kiểm tra sức khỏe sinh sản
+    - Đối phó với vô sinh
+
+- intent: addiction_recovery
+  examples: |
+    - Hỗ trợ cho quá trình phục hồi nghiện
+    - Các chương trình 12 bước
+    - Các liệu pháp điều trị nghiện
+    - Chiến lược phòng ngừa tái phát
+
+- intent: caregiving_tips
+  examples: |
+    - Chăm sóc người thân bị sa sút trí tuệ
+    - Giao tiếp hiệu quả với người cao tuổi
+    - Các thiết bị hỗ trợ cho người già
+    - Quản lý các hành vi thách thức ở bệnh nhân
+
+- intent: cancer_support
+  examples: |
+    - Các nhóm hỗ trợ ung thư
+    - Đối phó với tác dụng phụ của hóa trị
+    - Mẹo phòng ngừa ung thư
+    - Hỗ trợ cho người chăm sóc ung thư
+
+- intent: nutrition_for_athletes
+  examples: |
+    - Dinh dưỡng cho vận động viên
+    - Bữa ăn trước tập luyện
+    - Thực phẩm phục hồi sau tập luyện
+    - Mẹo dưỡng ẩm cho vận động viên
+
+- intent: youth_health
+  examples: |
+    - Vấn đề sức khỏe thanh thiếu niên
+    - Thói quen lành mạnh cho thanh thiếu niên
+    - Sức khỏe tâm thần ở tuổi vị thành niên
+    - Phòng ngừa lạm dụng chất ở thanh thiếu niên
+
+- intent: disease_prevention
+  examples: |
+    - Phòng ngừa các bệnh thường gặp
+    - Lịch tiêm chủng cho trẻ em
+    - Ngăn ngừa sự lây lan của các bệnh truyền nhiễm
+    - Các biện pháp phòng ngừa khi du lịch
+
+- intent: vision_care
+  examples: |
+    - Mẹo chăm sóc mắt
+    - Các vấn đề mắt thường gặp
+    - Chọn kính hoặc kính áp tròng phù hợp
+    - Biện pháp bảo vệ mắt
+
+- intent: skin_care
+  examples: |
+    - Quy trình chăm sóc da
+    - Đối phó với mụn
+    - Mẹo bảo vệ da khỏi ánh nắng mặt trời
+    - Các tình trạng da thường gặp
+
+- intent: elderly_nutrition
+  examples: |
+    - Dinh dưỡng cho người cao tuổi
+    - Quản lý cảm giác thèm ăn ở người già
+    - Ý tưởng bữa ăn thân thiện với người cao tuổi
+    - Các thực phẩm bổ sung dinh dưỡng cho người lớn tuổi
+
+- intent: teen_nutrition
+  examples: |
+    - Ăn uống lành mạnh cho thanh thiếu niên
+    - Chế độ ăn cân bằng cho tuổi vị thành niên
+    - Đối phó với vấn đề hình ảnh cơ thể
+    - Khuyến khích thói quen ăn uống tích cực
+
+- intent: cognitive_health
+  examples: |
+    - Bài tập nhận thức cho sức khỏe não bộ
+    - Kỹ thuật cải thiện trí nhớ
+    - Phòng ngừa suy giảm nhận thức
+    - Thực phẩm giúp tăng cường trí não
+
+- intent: dental_health
+  examples: |
+    - Chăm sóc các cấy ghép răng
+    - Vệ sinh miệng cho người đeo niềng răng
+    - Đối phó với tình trạng nhạy cảm của răng
+    - Chọn kem đánh răng phù hợp
+
+- intent: heart_health
+  examples: |
+    - Duy trì sức khỏe tim mạch
+    - Chế độ ăn tốt cho tim
+    - Bài tập cho một trái tim khỏe mạnh
+    - Quản lý huyết áp
+
+- intent: physical_therapy
+  examples: |
+    - Lợi ích của vật lý trị liệu
+    - Các bài tập cho các chấn thương thường gặp
+    - Phục hồi sau phẫu thuật
+    - Chọn chuyên gia vật lý trị liệu phù hợp
+
+- intent: nutrition_supplements
+  examples: |
+    - Lợi ích của các thực phẩm bổ sung dinh dưỡng
+    - Chọn các thực phẩm bổ sung phù hợp
+    - Vitamin và khoáng chất cho nhu cầu sức khỏe cụ thể
+    - Tương tác của thực phẩm bổ sung với thuốc
+
+- intent: mindful_eating
+  examples: |
+    - Thực hành ăn uống chánh niệm
+    - Các bài tập ăn uống chánh niệm
+    - Lắng nghe cơ thể để biết đói và no
+    - Tránh ăn uống vì cảm xúc
+
+- intent: gut_health
+  examples: |
+    - Duy trì sức khỏe đường ruột
+    - Thực phẩm cho một đường ruột khỏe mạnh
+    - Probiotics và prebiotics
+    - Đối phó với các vấn đề tiêu hóa
+
+- intent: women_health
+  examples: |
+    - Các kiểm tra sức khỏe cho phụ nữ
+    - Quản lý bất thường kinh nguyệt
+    - Sức khỏe sau mãn kinh
+    - Sức khỏe ngực và tự kiểm tra
+
+- intent: nutrition_myths
+  examples: |
+    - Những hiểu lầm phổ biến về dinh dưỡng
+    - Những quan niệm sai lầm về chế độ ăn uống và tập thể dục
+    - Những huyền thoại và sự thật về thực phẩm
+    - Sự thật về ăn uống lành mạnh
+
+- intent: lifestyle_changes
+  examples: |
+    - Thực hiện các thay đổi lối sống bền vững
+    - Đặt mục tiêu sức khỏe thực tế
+    - Giữ động lực cho việc tập thể dục
+    - Xây dựng thói quen lành mạnh
+
+- intent: child_nutrition
+  examples: |
+    - Dinh dưỡng cho trẻ kén ăn
+    - Ý tưởng bữa trưa lành mạnh cho trẻ em
+    - Các món ăn nhẹ cân bằng cho trẻ
+    - Ngăn ngừa béo phì ở trẻ em
+
+- intent: mind_body_connection
+  examples: |
+    - Kết nối tâm trí và cơ thể trong sức khỏe
+    - Lợi ích của thiền và yoga
+    - Căng thẳng cảm xúc và sức khỏe thể chất
+    - Suy nghĩ tích cực và ảnh hưởng của nó đến sức khỏe
+
+- intent: fitness_motivation
+  examples: |
+    - Giữ động lực cho thể dục
+    - Vượt qua các trở ngại trong tập luyện
+    - Tìm niềm vui trong hoạt động thể chất
+    - Tạo một môi trường hỗ trợ tập thể dục
+
+- intent: mindfulness_meditation
+  examples: |
+    - Giới thiệu về thiền chánh niệm
+    - Thực hành thở chánh niệm
+    - Thiền quét cơ thể
+    - Thiền ăn uống chánh niệm
+
+- intent: aging_gracefully
+  examples: |
+    - Mẹo tuổi tác thanh thản
+    - Duy trì sự nhạy bén tinh thần khi về già
+    - Chấp nhận quá trình lão hóa
+    - Tìm kiếm mục đích và niềm vui trong những năm tháng cuối đời
+
+- synonym: unwell
+  examples: |
+    - malaise
